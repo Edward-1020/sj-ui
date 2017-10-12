@@ -1,0 +1,18 @@
+.yhsd-progress {
+  height: 4px;
+  position: relative;
+  border-radius: 4px;
+  background: #eaeaea;
+}
+
+.yhsd-progress__portion {
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.yhsd-progress__portion--animation {
+  transition: width 1s;
+}
