@@ -1,12 +1,15 @@
 <template>
   <div class="yhsd-progress">
-    <span :class = "['yhsd-progress__portion', {'yhsd-progress__portion--animation': isAnimation}]" ref="portionDom"></span>
+    <span
+      :class = "['yhsd-progress__portion', {'yhsd-progress__portion--animation': isAnimation}, {'yhsd-progress__portion--left': isLefted}]" ref="portionDom">
+    </span>
   </div>
 </template>
 <script type="text/ecmascript-6">
 const DEFAULT_ISANIMATION = false
 const DEFAULT_COLOR = '#f66'
 const DEFAULT_DURATION = 1
+const DEFAULT_ISLEFTED = false
 
 export default {
   name: 'yhsd-progress',
@@ -32,6 +35,10 @@ export default {
       type: Number,
       required: true,
       validator: value => value >= 0 && value <= 100
+    },
+    isLefted: {
+      type: Boolean,
+      default: DEFAULT_ISLEFTED
     }
   },
   computed: {
@@ -58,7 +65,7 @@ export default {
         if (this.isAnimation) {
           portionDom.style.transition = this.portionStyle.transition
         }
-      }, 0)
+      }, 20)
     }
   },
   mounted () {
