@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 
-import './common/css/countDown.css'
+import './common/css/progress.css'
 
 Vue.config.productionTip = false
 

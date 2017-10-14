@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <yhsd-count-down :time="30">
-    </yhsd-count-down>
+    <yhsd-progress/>
   </div>
 </template>
 
 <script>
-import yhsdCountDown from './package/countDown'
+import yhsdProgress from './package/progress'
 
 export default {
   name: 'app',
   components: {
-    yhsdCountDown
+    yhsdProgress
   }
 }
 </script>
