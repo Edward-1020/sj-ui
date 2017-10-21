@@ -162,7 +162,8 @@ export default {
       PopupManager.closeModal(this._popupId)
 
       if (this.preventScroll) {
-        document.removeEventListener('')
+        document.removeEventListener('touchstart', this.recordPosition, false)
+        document.removeEventListener('touchmove', this.watchTouchMove, false)
       }
     }
   },

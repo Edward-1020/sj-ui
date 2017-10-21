@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <yhsd-progress/>
+    <yhsd-loading/>
   </div>
 </template>
 
 <script>
-import yhsdProgress from './package/progress'
+import Loading from './package/loading'
 
 export default {
   name: 'app',
   components: {
-    yhsdProgress
+    [Loading.name]: Loading
   }
 }
 </script>

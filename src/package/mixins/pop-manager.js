@@ -102,7 +102,7 @@ const PopupManager = {
       if (topItem.id === id) {
         modalStack.pop()
         if (modalStack.length > 0) {
-          modalDom.style.zIndex = modalStack[modalStack.length -1].zIndex
+          modalDom.style.zIndex = modalStack[modalStack.length - 1].zIndex
           modalDom.parentNode.removeChild(modalDom)
           const currModalParent = modalStack[0].parentNode
           currModalParent && currModalParent.appendChild(modalDom)

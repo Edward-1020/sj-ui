@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 
-import './common/css/progress.css'
+import './common/scss/loading.scss'
 
 Vue.config.productionTip = false
 
