@@ -104,11 +104,11 @@
   background-color: $bottom-action-button-default-background-color;
 }
 
-.yhsd-button--bottom-action.van-button--primary {
+.yhsd-button--bottom-action.yhsd-button--primary {
   background-color: $bottom-action-button-primary-background-color;
 }
 
-.van-button--disabled {
+.yhsd-button--disabled {
   color: $button-disabled-color;
   background-color: $button-disabled-background-color;
   border: 1px solid $button-disabled-border-color;
