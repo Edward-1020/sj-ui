@@ -1,6 +1,6 @@
-@import './var.scss';
+@import './common/var.scss';
 
-.yshd-button {
+.yhsd-button {
   position: relative;
   padding: 0;
   display: inline-block;
@@ -32,51 +32,51 @@
   }
 }
 
-.yshd-button__icon-loading {
+.yhsd-button__icon-loading {
   display: inline-block;
 }
 
-.yshd-button--default {
+.yhsd-button--default {
   color: $button-default-color;
   background-color: $button-default-background-color;
   border: 1px solid $button-default-border-color;
 }
 
-.yshd-button--primary {
+.yhsd-button--primary {
   color: $button-primary-color;
   background-color: $button-primary-background-color;
   border: 1px solid $button-primary-border-color;
 }
 
-.yshd-button--danger {
+.yhsd-button--danger {
   color: $button-danger-color;
   background-color: $button-danger-border-color;
   border: 1px solid $button-danger-border-color;
 }
 
-.yshd-button--large {
+.yhsd-button--large {
   width: 100%;
   height: 50px;
   line-height: 48px;
 }
 
-.yshd-button--normal {
+.yhsd-button--normal {
   padding: 0 15px;
   font-size: 14px;
 }
 
-.yshd-button--small {
+.yhsd-button--small {
   min-width: 60px;
   height: 30px;
   line-height: 28px;
   font-size: 12px;
 }
 
-.yshd-button.yshd-button__text {
+.yhsd-button.yhsd-button__text {
   display: none;
 }
 
-.yshd-button--mini {
+.yhsd-button--mini {
   display: inline-block;
   width: 50px;
   height: 22px;
@@ -84,16 +84,16 @@
   font-size: 10px;
 }
 
-.yshd-button--mini + .yshd-button--mini {
+.yhsd-button--mini + .yhsd-button--mini {
   margin-left: 5px;
 }
 
-.yshd-button--block {
+.yhsd-button--block {
   width: 100%;
   display: block;
 }
 
-.yshd-button--bottom-action {
+.yhsd-button--bottom-action {
   width: 100%;
   height: 50px;
   line-height: 50px;
@@ -101,10 +101,10 @@
   border-radius: 0;
   font-size: 16px;
   color: $bottom-action-button-default-color;
-  background-color: $bttom-action-button-default-background-color;
+  background-color: $bottom-action-button-default-background-color;
 }
 
-.yshd-button--bottom-action.van-button--primary {
+.yhsd-button--bottom-action.van-button--primary {
   background-color: $bottom-action-button-primary-background-color;
 }
 

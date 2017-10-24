@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import App from './App'
 
-import './common/scss/loading.scss'
+import './scss/common/normalize.scss'
+import './scss/button.scss'
 
 Vue.config.productionTip = false
 

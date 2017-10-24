@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <yhsd-loading/>
+    <yhsd-button size="mini">aaaaa</yhsd-button>
   </div>
 </template>
 
 <script>
-import Loading from './package/loading'
+import Button from './package/button'
 
 export default {
   name: 'app',
   components: {
-    [Loading.name]: Loading
+    [Button.name]: Button
   }
 }
 </script>
