@@ -75,7 +75,7 @@ const PopupManager = {
 
     const modalDom = getModal()
 
-    modalDom.classList.add('yhsd-modal')
+    modalDom.classList.add('sj-modal')
 
     let domParentNode
     if (dom && dom.parentNode && dom.parentNode.nodeType !== 11) {

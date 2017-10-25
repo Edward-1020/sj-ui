@@ -1,6 +1,6 @@
 <template>
-  <div :class="['yhsd-loading', 'yhsd-loading--' + type]">
-    <span :class="['yhsd-loading__spinner', 'yhsd-loading__spinner--' + type, 'yhsd-loading__spinner--' + color]"></span>
+  <div :class="['sj-loading', 'sj-loading--' + type]">
+    <span :class="['sj-loading__spinner', 'sj-loading__spinner--' + type, 'sj-loading__spinner--' + color]"></span>
   </div>
 </template>
 <script type="text/ecmascript-6">
@@ -8,7 +8,7 @@ const VALID_TYPES = ['gradient-circle', 'circle']
 const VALID_COLORS = ['black', 'white']
 
 export default {
-  name: 'yhsd-loading',
+  name: 'sj-loading',
 
   props: {
     type: {

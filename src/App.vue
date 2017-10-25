@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <yhsd-button bottom-action = "true" type="primary">aaa</yhsd-button>
-    <yhsd-loading/>
+    <sj-button bottom-action = "true" type="primary">aaa</sj-button>
+    <sj-loading/>
   </div>
 </template>
 

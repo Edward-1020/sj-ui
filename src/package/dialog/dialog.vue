@@ -1,29 +1,29 @@
 <template>
-  <transition name="yhsd-dialog-bounce">
-    <div class="yhsd-dialog" v-show="value">
-      <div class="yhsd-dialog__header" v-if="title" v-text="title"/>
-      <div class="yhsd-dialog__content yhsd-hairline">
+  <transition name="sj-dialog-bounce">
+    <div class="sj-dialog" v-show="value">
+      <div class="sj-dialog__header" v-if="title" v-text="title"/>
+      <div class="sj-dialog__content sj-hairline">
         <slot>
-          <div class="yhsd-dialog__message" v-if="message" :class="{'yhsd-dialog__message--withtitle': title}" v-html="message"/>
+          <div class="sj-dialog__message" v-if="message" :class="{'sj-dialog__message--withtitle': title}" v-html="message"/>
         </slot>
       </div>
-      <div class="yhsd-dialog__footer" :class="{'is-twobtn': showCancelButton && showConfirmButton}">
-        <yhsd-button
+      <div class="sj-dialog__footer" :class="{'is-twobtn': showCancelButton && showConfirmButton}">
+        <sj-button
           size="large"
-          class="yhsd-dialog__cancel"
+          class="sj-dialog__cancel"
           v-show="showCancelButton"
           @click="handleAction('cancel')"
         >
           {{cancelButtonText}}
-        </yhsd-button>
-        <yhsd-button
+        </sj-button>
+        <sj-button
           size="large"
-          :class="['yhsd-dialog__confirm', {'yhsd-hairline--left': showCancelButton && showConfirmButton}]"
+          :class="['sj-dialog__confirm', {'sj-hairline--left': showCancelButton && showConfirmButton}]"
           v-show="showConfirmButton"
           @click="handleAction('confirm')"
         >
           {{confirmButtonText}}
-        </yhsd-button>
+        </sj-button>
       </div>
     </div>
   </transition>
@@ -33,7 +33,7 @@ import Button from '../button'
 import Popup from '../mixins/popup'
 
 export default {
-  name: 'yhsd-dialog',
+  name: 'sj-dialog',
 
   components: {
     [Button.name]: Button

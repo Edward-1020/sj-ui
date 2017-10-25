@@ -4,7 +4,7 @@ const ALLOWED_SIZE = ['mini', 'small', 'normal', 'large']
 const ALLOWED_TYPE = ['default', 'danger', 'primary']
 
 export default {
-  name: 'yhsd-button',
+  name: 'sj-button',
 
   components: {
     [Loading.name]: Loading
@@ -48,26 +48,26 @@ export default {
         type = {this.nativeType}
         disabled = {disabled}
         class = {[
-          'yhsd-button',
-          'yhsd-button--' + type,
-          'yhsd-button--' + this.size,
+          'sj-button',
+          'sj-button--' + type,
+          'sj-button--' + this.size,
           {
-            'yhsd-button--disabled': disabled,
-            'yhsd-button--loading': loading,
-            'yhsd-button--block': this.block,
-            'yhsd-button--bottom-action': this.bottomAction
+            'sj-button--disabled': disabled,
+            'sj-button--loading': loading,
+            'sj-button--block': this.block,
+            'sj-button--bottom-action': this.bottomAction
           }
         ]}
         onClick = {this.onClick}
       >
         {loading
-          ? <yhsd-loading
-              class = "yhsd-button__icon-loading"
+          ? <sj-loading
+              class = "sj-button__icon-loading"
               type = "circle"
               color={type === 'default' ? 'black' : 'white'}
             />
           : null}
-        <span class = "yhsd-button__text">
+        <span class = "sj-button__text">
           {this.$slots.default}
         </span>
       </Tag>

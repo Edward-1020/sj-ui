@@ -1,11 +1,11 @@
-.yhsd-progress {
+.sj-progress {
   height: 4px;
   position: relative;
   border-radius: 4px;
   background: #eaeaea;
 }
 
-.yhsd-progress__portion {
+.sj-progress__portion {
   position: absolute;
   left: 0;
   width: 0%;
@@ -13,11 +13,11 @@
   border-radius: 4px;
 }
 
-.yhsd-progress__portion--left {
+.sj-progress__portion--left {
   left: auto;
   right: 0;
 }
 
-.yhsd-progress__portion--animation {
+.sj-progress__portion--animation {
   transition: width 1s;
 }

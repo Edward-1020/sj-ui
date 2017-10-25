@@ -1,6 +1,6 @@
 @import './common/var.scss';
 
-.yhsd-button {
+.sj-button {
   position: relative;
   padding: 0;
   display: inline-block;
@@ -32,51 +32,51 @@
   }
 }
 
-.yhsd-button__icon-loading {
+.sj-button__icon-loading {
   display: inline-block;
 }
 
-.yhsd-button--default {
+.sj-button--default {
   color: $button-default-color;
   background-color: $button-default-background-color;
   border: 1px solid $button-default-border-color;
 }
 
-.yhsd-button--primary {
+.sj-button--primary {
   color: $button-primary-color;
   background-color: $button-primary-background-color;
   border: 1px solid $button-primary-border-color;
 }
 
-.yhsd-button--danger {
+.sj-button--danger {
   color: $button-danger-color;
   background-color: $button-danger-border-color;
   border: 1px solid $button-danger-border-color;
 }
 
-.yhsd-button--large {
+.sj-button--large {
   width: 100%;
   height: 50px;
   line-height: 48px;
 }
 
-.yhsd-button--normal {
+.sj-button--normal {
   padding: 0 15px;
   font-size: 14px;
 }
 
-.yhsd-button--small {
+.sj-button--small {
   min-width: 60px;
   height: 30px;
   line-height: 28px;
   font-size: 12px;
 }
 
-.yhsd-button.yhsd-button__text {
+.sj-button.sj-button__text {
   display: none;
 }
 
-.yhsd-button--mini {
+.sj-button--mini {
   display: inline-block;
   width: 50px;
   height: 22px;
@@ -84,16 +84,16 @@
   font-size: 10px;
 }
 
-.yhsd-button--mini + .yhsd-button--mini {
+.sj-button--mini + .sj-button--mini {
   margin-left: 5px;
 }
 
-.yhsd-button--block {
+.sj-button--block {
   width: 100%;
   display: block;
 }
 
-.yhsd-button--bottom-action {
+.sj-button--bottom-action {
   width: 100%;
   height: 50px;
   line-height: 50px;
@@ -104,11 +104,11 @@
   background-color: $bottom-action-button-default-background-color;
 }
 
-.yhsd-button--bottom-action.yhsd-button--primary {
+.sj-button--bottom-action.sj-button--primary {
   background-color: $bottom-action-button-primary-background-color;
 }
 
-.yhsd-button--disabled {
+.sj-button--disabled {
   color: $button-disabled-color;
   background-color: $button-disabled-background-color;
   border: 1px solid $button-disabled-border-color;

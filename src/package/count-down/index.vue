@@ -1,7 +1,7 @@
 <template>
   <span>
     <slot name="countDown" :time="fmtDate">
-      <span class="yhsd-count-down">
+      <span class="sj-count-down">
         {{`${fmtDate.d}天${fmtDate.h}时${fmtDate.m}分${fmtDate.s}秒`}}
       </span>
     </slot>
@@ -11,7 +11,7 @@
 const DEFAULT_TIME = 0
 
 export default {
-  name: 'yhsd-count-down',
+  name: 'sj-count-down',
   data () {
     return {
       countDownPreTimer: null,

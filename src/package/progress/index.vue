@@ -1,7 +1,7 @@
 <template>
-  <div class="yhsd-progress">
+  <div class="sj-progress">
     <span
-      :class = "['yhsd-progress__portion', {'yhsd-progress__portion--animation': isAnimation}, {'yhsd-progress__portion--left': isLefted}]" ref="portionDom">
+      :class = "['sj-progress__portion', {'sj-progress__portion--animation': isAnimation}, {'sj-progress__portion--left': isLefted}]" ref="portionDom">
     </span>
   </div>
 </template>
@@ -12,7 +12,7 @@ const DEFAULT_DURATION = 1
 const DEFAULT_ISLEFTED = false
 
 export default {
-  name: 'yhsd-progress',
+  name: 'sj-progress',
   data () {
     return {
       timer: null
