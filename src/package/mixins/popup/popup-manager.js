@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import PopupContext from './pop-context'
+import PopupContext from './popup-context'
 
 const getModal = function () {
   if (Vue.prototype.$isServer) return
@@ -107,12 +107,12 @@ const PopupManager = {
           const currModalParent = modalStack[0].parentNode
           currModalParent && currModalParent.appendChild(modalDom)
         }
-      }
-    } else {
-      for (let i = modalStack.length - 1; i >= 0; i--) {
-        if (modalStack[i].id === id) {
-          modalStack.splice(i, 1)
-          break
+      } else {
+        for (let i = modalStack.length - 1; i >= 0; i--) {
+          if (modalStack[i].id === id) {
+            modalStack.splice(i, 1)
+            break
+          }
         }
       }
     }

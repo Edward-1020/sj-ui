@@ -1,5 +1,5 @@
-import PopupManager from './pop-manager'
-import PopupContext from './pop-context'
+import PopupManager from './popup-manager'
+import PopupContext from './popup-context'
 
 export default {
   props: {
@@ -172,7 +172,7 @@ export default {
     PopupManager.deregister(this._popupId)
     PopupManager.closeModal(this._popupId)
 
-    if (this.overlay && this.bodyOverflow !== null  && this.bodyOverflow !== 'hidden') {
+    if (this.overlay && this.bodyOverflow !== null && this.bodyOverflow !== 'hidden') {
       document.body.style.overflow = this.bodyOverflow
     }
 
