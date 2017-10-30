@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <sj-button bottom-action = "true" type="primary" @click.native="show = !show">click</sj-button>
-    <transition name="fade">
-      <sj-button type="primary" v-if="show">aaaaa</sj-button>
-    </transition>
   </div>
 </template>
 
