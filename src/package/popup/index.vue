@@ -51,7 +51,7 @@ export default {
 
     value (val) {
       this.currentValue = val
-    },
+    }
   },
 
   beforeMount () {

@@ -128,6 +128,10 @@ export default {
         }
       }
 
+      this.$el.style.zIndex = PopupManager.nextZIndex()
+      this.opened = true
+      this.opening = false
+
       if (this.preventScroll) {
         document.addEventListener('touchstart', this.recordPosition, false)
         document.addEventListener('touchmove', this.watchTouchMove, false)

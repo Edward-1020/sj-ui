@@ -3,7 +3,7 @@ import App from './App'
 
 import './scss/common/normalize.scss'
 import './scss/button.scss'
-import './scss/loading.scss'
+import './scss/popup.scss'
 
 Vue.config.productionTip = false
 

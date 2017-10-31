@@ -28,7 +28,7 @@ const PopupContext = {
   },
 
   plusKeyByOne (key) {
-    const oldVal = +global.popupContext[key]
+    const oldVal = +_global.popupContext[key]
     _global.popupContext[key] = oldVal + 1
 
     return oldVal

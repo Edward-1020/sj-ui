@@ -1,19 +1,25 @@
 <template>
   <div id="app">
+    <sj-button @click="show = true"></sj-button>
+    <sj-popup v-model="show">
+      <sj-button>aaaaa</sj-button>
+    </sj-popup>
   </div>
 </template>
 
 <script>
+import Popup from './package/popup'
 import Button from './package/button'
 
 export default {
   name: 'app',
   data () {
     return {
-      show: true
+      show: false
     }
   },
   components: {
+    [Popup.name]: Popup,
     [Button.name]: Button
   }
 }
