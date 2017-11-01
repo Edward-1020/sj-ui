@@ -16,7 +16,6 @@ const defaultConfig = {
 
 const initInstance = () => {
   const DialogConstructor = Vue.extend(DialogComponent)
-  console.log(DialogComponent)
   instance = new DialogConstructor({
     el: document.createElement('div')
   })
