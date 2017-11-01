@@ -24,7 +24,6 @@ const initInstance = () => {
   instance.$on('input', value => {
     instance.value = value
   })
-  console.log(instance.showConfirmButton)
   document.body.appendChild(instance.$el)
 }
 
