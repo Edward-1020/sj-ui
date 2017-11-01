@@ -52,7 +52,7 @@ export default {
     },
     showConfirmButton: {
       type: Boolean,
-      dafault: false
+      default: true
     },
     showCancelButton: {
       type: Boolean,

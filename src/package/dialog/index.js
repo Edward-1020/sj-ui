@@ -16,6 +16,7 @@ const defaultConfig = {
 
 const initInstance = () => {
   const DialogConstructor = Vue.extend(DialogComponent)
+  console.log(DialogComponent)
   instance = new DialogConstructor({
     el: document.createElement('div')
   })
@@ -23,7 +24,7 @@ const initInstance = () => {
   instance.$on('input', value => {
     instance.value = value
   })
-
+  console.log(instance.showConfirmButton)
   document.body.appendChild(instance.$el)
 }
 
@@ -32,7 +33,6 @@ const Dialog = options => {
     if (!instance) {
       initInstance()
     }
-
     Object.assign(instance, {
       resolve,
       reject,

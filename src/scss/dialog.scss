@@ -10,7 +10,7 @@
   transition: .2s;
   border-radius: 4px;
   background-color: $white;
-  transform: translate3d(-50%， -50%， 0);
+  transform: translate3d(-50%, -50%, 0);
 
   &__header {
     padding: 15px 0 0;
@@ -28,7 +28,7 @@
   &__message {
     line-height: 1.5;
 
-    &__withtitle {
+    &--withtitle {
       color: $gray-dark;
       font-size: 14px;
     }
@@ -44,6 +44,10 @@
         flex: 1
       }
     }
+  }
+
+  .sj-button {
+    border: 0;
   }
 
   &__confirm {

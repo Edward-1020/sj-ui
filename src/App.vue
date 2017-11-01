@@ -1,25 +1,24 @@
 <template>
   <div id="app">
-    <sj-button @click="show = true"></sj-button>
-    <sj-popup v-model="show">
-      <sj-button>aaaaa</sj-button>
-    </sj-popup>
+    <sj-button @click="handleClick" type="default">aaaa</sj-button>
   </div>
 </template>
 
 <script>
-import Popup from './package/popup'
+import Dialog from './package/dialog'
 import Button from './package/button'
 
 export default {
   name: 'app',
-  data () {
-    return {
-      show: false
+  methods: {
+    handleClick () {
+      Dialog.confirm({
+        title: '标题',
+        message: '弹窗内容'
+      })
     }
   },
   components: {
-    [Popup.name]: Popup,
     [Button.name]: Button
   }
 }

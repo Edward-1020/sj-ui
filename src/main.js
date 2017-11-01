@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import App from './App'
 
-import './scss/common/normalize.scss'
+import './scss/base.scss'
+import './scss/reset.scss'
 import './scss/button.scss'
 import './scss/popup.scss'
+import './scss/dialog.scss'
 
 Vue.config.productionTip = false
 

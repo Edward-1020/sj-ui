@@ -7,7 +7,7 @@ const DEFAULT_CONTEXT = {
   idSeed: 1,
   zIndex: 2000,
   hasModal: false,
-  instance: {},
+  instances: {},
   modalStack: []
 }
 //  如果环境配置参数不存在， 则使用默认配置
