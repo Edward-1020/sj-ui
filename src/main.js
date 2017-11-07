@@ -5,7 +5,7 @@ import './scss/base.scss'
 import './scss/reset.scss'
 import './scss/button.scss'
 import './scss/popup.scss'
-import './scss/dialog.scss'
+import './scss/badge.scss'
 
 Vue.config.productionTip = false
 
