@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <sj-badge-group :activeKey="num">
-      <sj-badge title="热销榜" @click="num = 0"></sj-badge>
-      <sj-badge title="花式寿司" @click="num = 1" info="8"></sj-badge>
-      <sj-badge title="火炽寿司" @click="num = 2" info="99"></sj-badge>
-      <sj-badge title="手握寿司" @click="num = 3" info="199"></sj-badge>
-    </sj-badge-group>
+    <sj-card
+      title="商品名称"
+      desc="商品描述"
+      num="2"
+      price="2.00"
+      :thumb="`http://image.jiantuku.com/17-7-20/70601538.jpg?imageView2/1/w/200/h/200&e=1510135210&token=el7kgPgYzpJoB23jrChWJ2gV3HpRl0VCzFn8rKKv:9KpeGc-0VbtGe6Vl-NiNwWoyi-s=`"
+    />
   </div>
 </template>
 
 <script>
-import Badge from './package/badge'
-import BadgeGroup from './package/badge-group'
+import Card from './package/card'
 
 export default {
   name: 'app',
@@ -21,8 +21,7 @@ export default {
     }
   },
   components: {
-    [Badge.name]: Badge,
-    [BadgeGroup.name]: BadgeGroup
+    [Card.name]: Card
   }
 }
 </script>

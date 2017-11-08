@@ -1,11 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 
-import './scss/base.scss'
-import './scss/reset.scss'
-import './scss/button.scss'
-import './scss/popup.scss'
-import './scss/badge.scss'
+import './scss/card.scss'
 
 Vue.config.productionTip = false
 

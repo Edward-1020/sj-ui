@@ -9,7 +9,7 @@
       <slot name="title">
         <div v-if="title || price !== undefined" class="sj-card__row">
           <div v-if="title" class="sj-card__title">{{title}}</div>
-          <div v-if="price !== undefined" class="sj-card__price">x {{ price }}</div>
+          <div v-if="price !== undefined" class="sj-card__price">¥ {{ price }}</div>
         </div>
       </slot>
       <slot name="desc">
